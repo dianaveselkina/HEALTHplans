@@ -1,3 +1,7 @@
+@font-face{
+font-family: 'Roboto';
+src: url(../fonts/) format("truetype");
+}
 ul,ol{
   list-style-type: none;
 }
@@ -33,7 +37,7 @@ nav{
   }
   .banner-information{
     background-color: #4385F5;
-    width: 387px;
+    width: 388px;
     height: 450px;
     position: absolute;
     top: 0;
@@ -60,15 +64,15 @@ nav{
     color: #FFFFFF;
   }
   .banner-content-tel{
+    display: inline;
+    padding: 10px;
+    margin-left: 70px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 38px;
-    text-align: center;
     color: #FFE4A0;
-    width: 271px; 
-    height: 42px; 
     border: 1px solid #FFE4A0;
   }
   .banner-content-text3{
@@ -116,8 +120,14 @@ nav{
         margin-bottom: 1em; 
    }
    .advantages{
-    
     height: 734px;
+    position: relative;
+   }
+   .stethoscope{
+    z-index: 1;
+    position: absolute;
+    top: -390px;
+    right: -460px;
    }
    .advantages-title{
     font-family: 'Roboto';
@@ -137,36 +147,152 @@ nav{
     text-align: center;
    }
    .advantages-table{
-    width: 1087px;
+    height: 370px;
+    width: 980px;
     padding-left: 470px;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  align-items: center;
+    align-items: center;
    }
-   .stethoscope{
-    z-index: 1;
+   .stamp{
     position: absolute;
-    top: -312px;
-    right: -518px;
+    top: -40px;
+    right: 800px;
+    z-index: 3;
    }
+   .save-money{
+    position: absolute;
+    top: 16px;
+    right: 854px;
+    z-index: 4;
+   }
+   .pig{
+    z-index: 2;
+   }
+   .better-rates, 
+   .better-underwriting, 
+   .better-science{
+    width: 200px;
+    text-align: center;
+   }
+   
    .advantages-text1{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
     color: #5B5B5B;
    }
    .advantages-text{
-   
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 30px;
-text-align: center;
-
-color: #5B5B5B;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #5B5B5B;
+   }
+   .offers{
+    position: relative;
+    height: 933px;
+    width: 1920px;
+    background-color: #E8F5FF;
+   }
+   .doctor1{
+    position: absolute;
+    bottom: 100px;
+    
+    z-index: 1;
+   }
+   .offers-title{
+    padding-top: 60px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+    color: #4385F5;
+   }
+   .offers-grid{
+    height: 740px;
+    width: 980px;
+    padding-left: 475px;
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2, 1fr;
+    grid-column-gap: 180px;
+   }
+   .offers-grid-title-health,
+   .offers-grid-title-dental,
+   .offers-grid-title-short-term,
+   .offers-grid-title-life,
+   .offers-grid-title-travel,
+   .offers-grid-title-family{
+    text-align: center;
+   }
+   .partners{
+    height: 560px;
+    width: 1920px;
+   }
+   .partners-title{
+    padding-top: 87px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    color: #5B5B5B;
+   }
+   .partners-img{
+    padding: 54px 416px 80px 416px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2, 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+   }
+   .footer-content{
+    padding-top: 71px;
+    height: 433px;
+    background-color: #E8F5FF;
+    text-align: center;
+   }
+      .footer-content-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 55px;
+    color: #4385F5;
+   }
+   .footer-content-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 25px;
+    color: #000000;
+   }
+   .footer-copyright{
+    height: 110px;
+    background-color: #4385F5;
+    text-align: center;
+   }
+   .privacy,
+   .copyright{
+    
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 19px;
+   text-align: center;
+   color: #FFFFFF;
    }
