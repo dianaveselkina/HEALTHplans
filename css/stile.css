@@ -1,24 +1,50 @@
-@font-face{
-font-family: 'Roboto';
-src: url(../fonts/) format("truetype");
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/) format('truetype');
 }
-ul,ol{
+ul,
+ol,
+li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 
-.header{
+.header {
+  width: 100wh;
   display: flex;
   flex-direction: row;
   height: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255 255 255);
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+  z-index: 1;
 }
-nav{
+.header-tel {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 24px;
+}
+.header-telephone {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  color: #4385f5;
+}
+nav {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
   align-items: center;
 }
-.nav-list{
+.nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -26,273 +52,295 @@ nav{
   margin: 0;
   padding: 0;
 }
-.banner{
+.banner {
+  margin-top: 110px;
+  width: 100wh;
   background-image: url('../images/doctor.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 850px; 
+  height: 850px;
   position: relative;
   display: flex;
   align-items: center;
-  }
-  .banner-information{
-    background-color: #4385F5;
-    width: 388px;
-    height: 450px;
-    position: absolute;
-    top: 0;
-    left: 1100px;
-          
-  }
-  .banner-content-text1{
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 32px;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  }
-  .banner-content-text2{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 53px;
-    text-align: center;
-    color: #FFFFFF;
-  }
-  .banner-content-tel{
-    display: inline;
-    padding: 10px;
-    margin-left: 70px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 38px;
-    color: #FFE4A0;
-    border: 1px solid #FFE4A0;
-  }
-  .banner-content-text3{
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 32px;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  }
-  .about{
-    height: 756px;
-    padding: 54px 416px 80px 416px;
-  }
-  .about-tittle{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 38px;
-    text-align: center;
-    color: #4385F5;
-  }
-  .about-text{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    color: #5B5B5B;
-  }
-  .about-list{
-    display: flex;
-    flex-direction: row;
-  }
-  div ul{
-    padding-left: 5em;
-    list-style-image: url('../images/Ellipse.png');
-    
-  }
-  li {
-        margin-bottom: 1em; 
-   }
-   .advantages{
-    height: 734px;
-    position: relative;
-   }
-   .stethoscope{
-    z-index: 1;
-    position: absolute;
-    top: -390px;
-    right: -460px;
-   }
-   .advantages-title{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 38px;
-    text-align: center;
-    color: #4385F5;
-   }
-   .advantages-text{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-   }
-   .advantages-table{
-    height: 370px;
-    width: 980px;
-    padding-left: 470px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-   }
-   .stamp{
-    position: absolute;
-    top: -40px;
-    right: 800px;
-    z-index: 3;
-   }
-   .save-money{
-    position: absolute;
-    top: 16px;
-    right: 854px;
-    z-index: 4;
-   }
-   .pig{
-    z-index: 2;
-   }
-   .better-rates, 
-   .better-underwriting, 
-   .better-science{
-    width: 200px;
-    text-align: center;
-   }
-   
-   .advantages-text1{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    color: #5B5B5B;
-   }
-   .advantages-text{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    color: #5B5B5B;
-   }
-   .offers{
-    position: relative;
-    height: 933px;
-    width: 1920px;
-    background-color: #E8F5FF;
-   }
-   .doctor1{
-    position: absolute;
-    bottom: 100px;
-    
-    z-index: 1;
-   }
-   .offers-title{
-    padding-top: 60px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 38px;
-    text-align: center;
-    color: #4385F5;
-   }
-   .offers-grid{
-    height: 740px;
-    width: 980px;
-    padding-left: 475px;
-    padding-top: 120px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2, 1fr;
-    grid-column-gap: 180px;
-   }
-   .offers-grid-title-health,
-   .offers-grid-title-dental,
-   .offers-grid-title-short-term,
-   .offers-grid-title-life,
-   .offers-grid-title-travel,
-   .offers-grid-title-family{
-    text-align: center;
-   }
-   .partners{
-    height: 560px;
-    width: 1920px;
-   }
-   .partners-title{
-    padding-top: 87px;
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 32px;
-    color: #5B5B5B;
-   }
-   .partners-img{
-    padding: 54px 416px 80px 416px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2, 1fr;
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
-   }
-   .footer-content{
-    padding-top: 71px;
-    height: 433px;
-    background-color: #E8F5FF;
-    text-align: center;
-   }
-      .footer-content-title{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 52px;
-    line-height: 55px;
-    color: #4385F5;
-   }
-   .footer-content-text{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 25px;
-    color: #000000;
-   }
-   .footer-copyright{
-    height: 110px;
-    background-color: #4385F5;
-    text-align: center;
-   }
-   .privacy,
-   .copyright{
-    
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 19px;
-   text-align: center;
-   color: #FFFFFF;
-   }
+}
+.banner-information {
+  background-color: #4385f5;
+  width: 388px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 1100px;
+}
+.banner-content-text1 {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.banner-content-text2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 53px;
+  text-align: center;
+  color: #ffffff;
+}
+.banner-content-tel {
+  display: inline;
+  padding: 10px;
+  margin-left: 70px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  color: #ffe4a0;
+  border: 1px solid #ffe4a0;
+}
+.banner-content-text3 {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.about {
+  height: 756px;
+  padding: 54px 416px 80px 416px;
+}
+.about-tittle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center;
+  color: #4385f5;
+}
+.about-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #5b5b5b;
+}
+.about-list {
+  display: flex;
+  flex-direction: row;
+}
+div ul {
+  padding-left: 5em;
+  list-style-image: url('../images/Ellipse.png');
+}
+li {
+  margin-bottom: 1em;
+}
+.advantages {
+  width: 100wh;
+  height: 734px;
+  position: relative;
+}
+.stethoscope {
+  z-index: 1;
+  position: absolute;
+  top: -313px;
+  right: -206px;
+}
+.advantages-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center;
+  color: #4385f5;
+}
+.advantages-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.advantages-table {
+  height: 370px;
+  width: 50%;
+  padding-left: 470px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.save-money {
+  position: absolute;
+  top: 55px;
+  right: 55px;
+  z-index: 4;
+}
+.stamp-save-money {
+  position: absolute;
+  top: 6px;
+  right: 714px;
+  z-index: 4;
+}
+.pig {
+  z-index: 2;
+}
+.better-rates,
+.better-underwriting,
+.better-science {
+  width: 200px;
+  text-align: center;
+}
+.advantages-text1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #5b5b5b;
+}
+.advantages-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #5b5b5b;
+}
+.offers {
+  width: 100wh;
+  position: relative;
+  height: 933px;
+  background-color: #e8f5ff;
+}
+.doctor1 {
+  position: absolute;
+  bottom: -1px;
+  z-index: 1;
+}
+.offers-title {
+  padding-top: 60px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center;
+  color: #4385f5;
+}
+.offers-grid {
+  height: 740px;
+  width: 50%;
+  padding-left: 475px;
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-column-gap: 180px;
+}
+.offers-grid-title-health,
+.offers-grid-title-dental,
+.offers-grid-title-short-term,
+.offers-grid-title-life,
+.offers-grid-title-travel,
+.offers-grid-title-family {
+  text-align: center;
+}
+.partners {
+  height: 560px;
+  width: 100wh;
+}
+.partners-title {
+  padding-top: 87px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  color: #5b5b5b;
+}
+.partners-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.partners-block-img {
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  padding-top: 71px;
+  height: 433px;
+  background-color: #e8f5ff;
+  text-align: center;
+}
+.footer-content-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 55px;
+  color: #4385f5;
+}
+.footer-content-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 25px;
+  color: #000000;
+}
+.footer-tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-telephone {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  color: #000000;
+}
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 110px;
+  background-color: #4385f5;
+  text-align: center;
+}
+.privacy,
+.copyright {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
